@@ -1,6 +1,6 @@
 function openLabItem(labItem) {
 
-    var i, labItemContent, labItemLinks;
+    var i, labItemContent;
 
     labItemContent = document.getElementsByClassName("labItemContent");
     for (i = 0; i < labItemContent.length; i++) {
@@ -14,7 +14,7 @@ function openLabItem(labItem) {
 
 function openLab(labName) {
 
-    var i, labContent, labLinks;
+    var i, labContent;
 
     labContent = document.getElementsByClassName("labContent");
     for (i = 0; i < labContent.length; i++) {
