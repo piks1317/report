@@ -487,8 +487,10 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                 <p class="topic_item"><b>Мета:&nbsp;</b>придбати практичні навички роботи верстки сторінок засобами CSS,
                     верстки на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок
                 </p>
+                <p class="topic_item"><b>Місце розташування Звіту:&nbsp;</b><a
+                    href="https://github.com/piks1317/report">https://github.com/piks1317/report</a></p>
                 <p class="topic_item"><b>Місце розташування 3-ої ЛР:&nbsp;</b><a
-                        href="https://github.com/piks1317/lab2">https://github.com/piks1317/lab2</a></p>
+                        href="https://github.com/piks1317/lab3">https://github.com/piks1317/lab3</a></p>
             </div>
             <div class="col-8 labItemContent" style="display: none;" id="view">
                 <p><b>Зовнішній вигляд макету сайту:</b></p>
@@ -507,10 +509,10 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                     <p><b>Макет Каті(8 варіант)</b></p>
                 </a>
                 <a href="#julia1">
-                    <p><b>Мает Юлі(2 варіант)</b></p>
+                    <p><b>Макет Юлі(2 варіант)</b></p>
                 </a>
                 <a href="#vova1">
-                    <p><b>Мает Вови(3 варіант)</b></p>
+                    <p><b>Макет Вови(3 варіант)</b></p>
                 </a>
                 <div style="margin-top: 50px;" id="kater1">
                     <p><b>Зовнішній вигляд макету варіанту 8(Катюха):</b></p>
@@ -792,10 +794,10 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                     <p><b>Макет Каті(8 варіант)</b></p>
                 </a>
                 <a href="#julia2">
-                    <p><b>Мает Юлі(2 варіант)</b></p>
+                    <p><b>Макет Юлі(2 варіант)</b></p>
                 </a>
                 <a href="#vova2">
-                    <p><b>Мает Вови(3 варіант)</b></p>
+                    <p><b>Макет Вови(3 варіант)</b></p>
                 </a>
                 <div style="margin-top: 50px;" id="kater2">
                     <p><b>Зовнішній вигляд макету варіанту 8(Катюха):</b></p>
@@ -860,21 +862,20 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                 </div>
                 <div style="margin-top: 50px;" id="julia2">
                     <p><b>Зовнішній вигляд макету варіанту 2(Юля):</b></p>
-                    <img height="500px" width="1000px" src="images/var2float.png" alt="" srcset="">
+                    <img height="500px" width="1000px" src="images/var2_2float.jpg" alt="" srcset="">
                     <p style="margin-top: 50px;"><b>HTML-код:</b></p>
                     <xmp style="background-color: aqua;">
 
 
-                        <div id="header">
-                            <div id="head-field"></div>
+                        <div class="startendpart">
+                            <div class="mainwhitepart"></div>
                         </div>
-                        <div id="leftSidebar"></div>
-                        <div style="background-color: red; margin: 10px; 
-                        margin-left: 220px;"></div>
-                        <div id="rightSidebar"></div>
-                       
-                        <div id="main"></div>
-                        <div id="footer"></div>
+                        <div class="bluepart"></div>
+                        <div class="redpart"></div>
+                        <div class="bluepart2"></div>
+                    
+                        <div class="whitepart"></div>
+                        <div class="startendpart"></div>
 
 
 
@@ -885,42 +886,58 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                             font-size: 20px;
                             height: 80px;
                         }
-                
-                        #header {
+                        
+                        .startendpart {
                             background-color: yellow;
+                            height: 80px;
                         }
-                
-                        #head-field {
+                        
+                        .mainwhitepart {
                             display: inline-block;
-                            margin: 20px;
-                            height: 40px;
-                            width: 300px;
-                            background-color: #fff;
+                            background-color: white;
+                            margin: 25px;
+                            height: 20px;
+                            width: 400px;
+                            border: 3px solid black;
                         }
-                
-                        #leftSidebar {
+                        
+                        .bluepart {
                             background-color: blue;
                             float: left;
-                            width: 200px;
-                            height: 600px;
+                            width: 450px;
+                            height: 592px;
                         }
-                
-                        #rightSidebar {
-                            margin-right: 10px;
+                        
+                        .bluepart2 {
+                            margin-top: 10px;
+                            margin-right: 50px;
                             background-color: blue;
+                            border: 2px solid black;
                             float: right;
-                            width: 200px;
+                            width: 450px;
                             height: 480px;
                         }
-                
-                        #main {
-                            background-color: #eee;
+                        
+                        .whitepart {
+                            background-color: white;
+                            width: 450px;
                             height: 480px;
-                            margin-left: 220px;
+                            margin-top: 20px;
+                            margin-left: 520px;
                             margin-right: 220px;
-                            margin-bottom: 18px;
+                            margin-bottom: 22px;
+                            border: 2px solid black;
                         }
-                
+                        
+                        .redpart {
+                            background-color: red;
+                            border: 2px solid black;
+                            margin: 10px;
+                            margin-left: 518px;
+                            width: 933px;
+                            height: 55px;
+                        }
+                        
                         #footer {
                             background-color: yellow;
                         }
@@ -1002,7 +1019,9 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                 </div>
             </div>
             <div class="col-8 labItemContent" style="display: none;" id="conclusion3">
-
+                <p><b>Висновок: </b> ми придбали практичні навички верстки сторінок засобами CSS,
+                    розібрались у верстці на основі таблиць та на основі плаваючих елементів, з’ясували переваги та
+                    недоліки типів макетів веб-сторінок.</p>
             </div>
         </div>
     </div>
