@@ -487,12 +487,17 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                 <p class="topic_item"><b>Мета:&nbsp;</b>придбати практичні навички роботи верстки сторінок засобами CSS,
                     верстки на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок
                 </p>
+                <p><b>Хід виконання роботи:</b></p>
+                <p>Під час виконання лабораторної роботи ми придбали практичні навички з макетами різного типу. 
+                    Для цього ми використовували розмітку за допомогою таблиці та плаваючих блоків. Основний
+                     макет нашого сайту був розроблений з використанням плаваючих елементів та являється комбінованим типом.</p>
                 <p class="topic_item"><b>Місце розташування Звіту:&nbsp;</b><a
                     href="https://github.com/piks1317/report">https://github.com/piks1317/report</a></p>
                 <p class="topic_item"><b>Місце розташування 3-ої ЛР:&nbsp;</b><a
                         href="https://github.com/piks1317/lab3">https://github.com/piks1317/lab3</a></p>
             </div>
             <div class="col-8 labItemContent" style="display: none;" id="view">
+                <p><b><mark>Ми застосовували блочний, комбінований тип макету (адаптивний і гумовий) сайту</mark></b></p>
                 <p><b>Зовнішній вигляд макету сайту:</b></p>
                 <img style="margin-bottom: 50px;" height="800px" width="1000px" src="images/maket.png" alt="maket"
                     srcset="">
@@ -502,6 +507,7 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                 <img src="images/codMaketSite.png" alt="" srcset="">
                 <img style="margin-top: 30px" src="images/cssMaketSite.png" alt="" srcset="">
                 <img style="margin-top: 30px;" src="images/cssMaketSite1.png" alt="" srcset="">
+                <img style="margin-top: 30px;" src="images/cssMaketSite3.png" alt="" srcset="">
             </div>
             <div class="col-8 labItemContent" style="display: none;" id="table3">
                 <div id="home1"></div>
@@ -1022,10 +1028,762 @@ DarkGreen; color: white; padding: 1%; margin: 1% auto;" />
                 <p><b>Висновок: </b> ми придбали практичні навички верстки сторінок засобами CSS,
                     розібрались у верстці на основі таблиць та на основі плаваючих елементів, з’ясували переваги та
                     недоліки типів макетів веб-сторінок.</p>
+
+                    <b>Таблична верстка:</b>
+                    <p>Переваги:</p>
+                    <ul>
+                    <li>Таблиці не перекриваються один з одним при маленьких розширенях.</li>
+                    <li>Легко робити кросбраузерності дизайн.</li>
+                    Набагато простіше блочної верстки.</ul>
+                    Недоліки:
+                    <ul>
+                    <li>Дуже багато зайвого коду, з огляду на нескінченного створення рядків і стовпців.</li>
+                    <li>Далеко не кожен дизайн можна створити за допомогою таблиць.</li></ul>
+                    
+                    <b>Блокова верстка:</b>
+                    <p>Переваги:</p>
+                    <ul>
+                    <li>Значно менше HTML-коду і, як наслідок, зменшення ваги сторінки.</li>
+                    <li>Блоки завантажуються швидше таблиць .</li>
+                    <li>На відміну від таблиць, блоки - універсальний засіб для створення будь-якого дизайну.</li></ul>
+                    Недоліки:
+                    <ul>
+                    <li>Набагато складніше табличній верстки.</li>
+                    <li>Величезні проблеми з кросбраузерністю.</li>
+                    <li>Блоки починають наїжджати (або спадати) один на одного при маленьких дозволах екрану.</li>
+                    
             </div>
         </div>
     </div>
 
+
+    <div style="display: none; margin-top: 70px;" class="container labContent" id="div4">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary" onclick="openLabItem('describeDiv4')">ПОСТАНОВКА ЗАДАЧІ 
+                Лабораторної роботи 4</button>
+                <p style="margin-top: 40px;" class="structure"><b>Способи функціонального застосування JavaScript</b></p><br>
+                <div style="margin-left: 20px;">
+                    <button class="btn btn-primary" onclick="openLabItem('urlEx')">Схема URL</button><br>
+                    <button class="btn btn-primary" onclick="openLabItem('handlerEx')">Обробник подій</button><br>
+                    <button class="btn btn-primary" onclick="openLabItem('entityEx')">Підстановка(entity)</button><br>
+                    <button class="btn btn-primary" onclick="openLabItem('srciptEx')">Вставка тег(SCRIPT)</button><br>
+                </div>
+                <button style="margin-top: 20px;" class="btn btn-primary"
+                    onclick="openLabItem('arraysItem')">МАСИВИ(4 пункт)</button>
+                <button style="margin-top: 20px;" class="btn btn-primary"
+                    onclick="openLabItem('sixItem')">Виконання(6 пункту)</button><br>
+
+                <button style="margin-top: 20px;" class="btn btn-primary"
+                    onclick="openLabItem('conclusion4')">ВИСНОВОК</button>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="describeDiv4">
+                <p class="topic_item"><b>Тема:&nbsp;</b>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
+                    КЛАСИ,ОБ’ЄКТИ, ФУНКЦІЇ,  В МОВІ JAVASCRIPT. ПОДІЇ ТА ОБРОБКА ПОДІЙ.
+                    ПРОГРАМНА ВЗАЄМОДІЯ З HTML ДОКУМЕНТАМИ НА ОСНОВІ DOM АРІ
+                    </p>
+                <p class="topic_item"><b>Мета:&nbsp;</b>придбати практичні навички роботи маніпулювання 
+                    інформаційним вмістом Web-документа засобами мови Javasсript, використання об’єктів,
+                    масивів, функцій, подій, обробників подій у сценаріях на мові JavaScript
+                </p>
+                <p class="topic_item"><b>Місце розташування 4-ої ЛР:&nbsp;</b><a
+                        href="https://github.com/piks1317/lab4">https://github.com/piks1317/lab4</a></p>
+                <p class="topic_item"><b>Хід виконання роботи:&nbsp;</b>
+                <ol>
+                    <li>У звітному HTML-документі розмістити  тему, мету  лабораторної роботи №4 та посилання
+                         на місце розташування звітного документу та власного Web-застосунку.
+                    </li>
+                    <li>ЗУ власному сайті або на окремій WEB-сторінці, використовуючи функції ,
+                         застосувати  4 способи функціонального застосування JavaScript:
+                        <ul>
+                            <li>гіпертекстове посилання (схема URL)</li>
+                            <li>обробник події (handler)</li>
+                            <li>підстановка(entity)</li>
+                            <li>вставка (тег SCRIPT)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Розмістити результати виконання  та програмний код 2 пункту у звітному HTML-документі,
+                         записавши назви файлів HTML-документів.
+                    </li>
+                    <li>
+                        Використовуючі сценарій на JavaScript, виконати завдання яке приведене у 
+                        Таблиці №1. Кожному студенту виконати своє завдання.
+                        <img width="700px" height="380px" src="images/2-3table_1_tasks.png" alt="">
+                        <img width="700px" height="380px" src="images/8-9table_1_tasks.png" alt="">
+                    </li>
+                    <li>Розмістити результат виконання  та програмний код 4 пункту у звітному HTML-документі.
+                    </li>
+                    <li>
+                        Забезпечити виконання завдання згідно із варіантом (Таблиця №2), сформувати необхідні дані, 
+                        вбудовані у програму, у вигляді масивів, виконати тестування програми.
+                        <img width="700px" height="200px" src="images/2-3table_2_tasks.png" alt="">
+                        <img width="700px" height="200px" src="images/8-9table_2_tasks.png" alt="">
+                    </li>
+                    <li>
+                        Розмістити результат виконання  та програмний код 6 пункту у звітному HTML-документі.
+                    </li>
+                    <li>
+                        У власному сайті на свій розсуд застосувати сценарії на JavaScript. Продемонструвати 
+                        викладачу та відобразити у звітному HTML-документі.
+                    </li>
+                    <li>
+                        У звітному HTML-документі оформити звіт лабораторної роботи №4
+
+                    </li>
+                </ol>
+                </p>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="urlEx">
+                <p><b>Приклад:</b></p>
+                <ul>
+                    <li>Гіпертекстове посилання (схема URL)</li>
+                    <p><a href="JavaScript:alert('Молодець! Гарно справляєшся!');"> Натисни сюди</a></p>
+                </ul>
+                
+                <p><b>HTML-код: </b></p>
+                <xmp style="background-color: aqua;">
+
+    <li>Гіпертекстове посилання (схема URL)</li>
+    <p><a href="JavaScript:alert('Молодець! Гарно справляєшся!');"> Натисни сюди</a></p>
+
+                </xmp>
+
+                <p>Схема URL (Uniform Resource Locator) - це один з основних елементів Web-технології. 
+                    Кожен інформаційний ресурс в Web має свій унікальний URL. URL вказують в атрибуті 
+                    href тега A, в атрибуті src тега IMG, в атрибуті action тега FORM і т.і.</p>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="handlerEx">
+                <p><b>Приклад:</b></p>
+                <ul>
+                    <li>Обробник події (handler)</li>
+                    <br>
+                    <button class="btn btn-info" onclick="document.getElementById('demo').innerHTML=Date()">Дата</button>
+                    <p id="demo"></p>                
+                </ul>
+                
+                <p><b>HTML-код: </b></p>
+                <xmp style="background-color: aqua;">
+
+        <li>Обробник події (handler)</li>
+        <br>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">Дата</button>
+        <p id="demo"></p>
+                
+                </xmp>
+
+                <p>Обробники подій. Такі програми, як обробники подій (handler), вказуються в
+                     атрибутах тегів, з якими ці події пов'язані. Наприклад, при натисканні на
+                      кнопку відбувається подія click:
+                    <xmp><FORM> <INPUT TYPE = button VALUE = "Кнопка" onClick = "window.alert ('Увага');"> </FORM></xmp></p>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="entityEx">
+                <p><b>Приклад:</b></p>
+                <ul>
+                    <li>Підстановка (entity)</li>
+                    <br>
+                    <b>a</b> <input id="a">
+                    <b>b</b> <input id="b">
+                    <button class="btn btn-info" id="concut">concatenate</button>
+                    <p id="result"></p>
+                
+                    <script>
+                        function concatenate(){
+                
+                        const a = document.getElementById('a').value;
+                        const b = document.getElementById('b').value;
+                        const c = a + b;
+                        document.getElementById("result").innerHTML = `c = ${c}`;
+                        console.log(`c = ${c}`);
+                        }
+                        document.getElementById('concut').addEventListener('click', concatenate);
+                
+                    </script>
+                </ul>
+                
+                <p><b>HTML-код: </b></p>
+                <xmp style="background-color: aqua;">
+
+        <li>Підстановка (entity)</li>
+        <br>
+        <b>a</b> <input id="a">
+        <b>b</b> <input id="b">
+        <button id="concut">concatenate</button>
+        <p></p>
+    
+        <script>
+            function concatenate(){
+    
+            const a = document.getElementById('a').value;
+            const b = document.getElementById('b').value;
+            const c = a + b;
+            console.log(`c = ${c}`);
+            }
+            document.getElementById('concut').addEventListener('click', concatenate);
+    
+        </script>
+
+                </xmp>
+
+                <p>Підстановка (entity). Це досить потужний інструмент генерації
+                     HTML-сторінки на стороні браузера. Підстановки використовуються в 
+                     якості значень атрибутів HTML-тегів.</p>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="srciptEx">
+                <p><b>Приклад:</b></p>
+                <ul>
+                    <li>Вставка (тег SCRIPT)</li>
+                    <br>
+                    <b>Введіть число:</b> <input id="num">
+                    <button id="ok">OK</button>
+                    <script>
+                        function calculate() {
+                            var number = document.getElementById('num').value;
+                            rz = Math.log(number);
+                            document.getElementById('result').innerHTML = "Натуральний логарифм " + number + " = " + rz;
+                        }
+                
+                        document.getElementById('ok').addEventListener('click', calculate);
+                
+                    </script>
+                    <div id="result"></div>
+                </ul>
+                
+                <p><b>HTML-код: </b></p>
+                <xmp style="background-color: aqua;">
+
+    <li>Вставка (тег SCRIPT)</li>
+    <br>
+    <b>Введіть число:</b> <input id="num">
+    <button id="ok">OK</button>
+    <script>
+        function calculate() {
+            var number = document.getElementById('num').value;
+            rz = Math.log(number);
+            document.getElementById('result').innerHTML = "Натуральний логарифм " + number + " = " + rz;
+        }
+
+        document.getElementById('ok').addEventListener('click', calculate);
+
+    </script>
+    <div id="result"></div>
+
+                </xmp>
+
+                <p>Сценарій на JavaScript включається в документ за допомогою тега &lt;script&gt;<br>
+                    Код сценарію розміщують в теги коментаря html для того, щоб старі браузери, які 
+                    не розуміють JavaScript, не відображали цей код на екрані.
+                    Сам тег &lt;script&gt; включає атрибут language, який визначає мову і набуває таких 
+                    значень: language = "javascript" або type=”text/javascript”.<br>
+                    Елемент script може розташовуватися як всередині секції head, так і всередині body.
+                    Web-документ часто містить кілька сценаріїв JavaScript.
+                </p>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="arraysItem">
+                <div id="homeArray"></div>
+                <a href="#katerArrays">
+                    <p><b>Завдання Каті(8 варіант)</b></p>
+                </a>
+                <a href="#juliaArrays">
+                    <p><b>Завдання Юлі(2 варіант)</b></p>
+                </a>
+                <a href="#vovaArrays">
+                    <p><b>Завдання Вови(3 варіант)</b></p>
+                </a>
+                <div style="margin-top: 50px;" id="katerArrays">
+                    <p><b>Зовнішній вигляд та результат роботи програми варіанту 8(Катюха):</b></p>
+                        <img width="440px" height="180px" src="images/view_8_task.png" alt="" srcset="">
+                        <p><b>Результат роботи</b></p>
+                        <img width="415px" height="350px" src="images/result_8_task.png" alt="">
+                    <p style="margin-top: 50px;"><b>HTML-код:</b></p>
+                    <xmp style="background-color: aqua;">
+
+
+    <script>
+        let text = "hi everyone! that's the task №8 :D";
+        document.write(text);
+    </script>
+    <br><br>
+    <p><b>number of elements for the first array : </b><input type="number" id="firstN" min="1"
+            style="font-size: 80%; text-align: center; width: 10%"></p>
+    <p><b>number of elements for the second array : </b><input type="number" id="secondN" min="1"
+            style="font-size: 80%; text-align: center; width: 10%"></p>
+    <input type="button" id="run" value="Run" style="font-size: 80%; text-align: center"><br><br>
+    <div id="firstArray"></div>
+    <br>
+    <div id="secondArray"></div>
+    <br>
+    <div id="sortedFirst"></div>
+    <br>
+    <div id="sortedSecond"></div>
+    <br>
+    <div id="min"></div>
+
+
+    <script>
+        function task8() {
+            let n1 = document.getElementById('firstN').value;
+            let n2 = document.getElementById('secondN').value;
+            let array1 = [];
+            let array2 = [];
+
+            for (let i = 0; i < n1; i++) {
+                array1[i] = Math.round((Math.random() * 10))
+            }
+
+            for (let i = 0; i < n2; i++) {
+                array2[i] = Math.round((Math.random() * 10))
+            }
+
+            function bubbleSort(array) {
+                let len = array.length;
+                for (let i = 0; i < len; i++) {
+                    for (let j = 0; j < len - i - 1; j++) {
+                        if (array[j] > array[j + 1]) {
+                            // swap
+                            let temp = array[j];
+                            array[j] = array[j + 1];
+                            array[j + 1] = temp;
+                        }
+                    }
+                }
+                return array;
+            }
+
+            let sorted1 = bubbleSort(array1);
+            let sorted2 = bubbleSort(array2);
+
+            let min = 0;
+            for (let i = 0; i < sorted1.length; i++) {
+                if (sorted2.includes(sorted1[i])) {
+                    min = sorted1[i];
+                    break;
+                } else {
+                    min = 'do not contains the same numbers'
+                }
+            }
+
+
+            document.getElementById('firstArray').innerHTML = "\nfirst array : " + array1;
+            document.getElementById('secondArray').innerHTML = "second array : " + array2;
+            document.getElementById('sortedFirst').innerHTML = "sorted first array : " + sorted1;
+            document.getElementById('sortedSecond').innerHTML = "sorted second array : " + sorted2;
+            document.getElementById('min').innerHTML = "the smallest identical element in two"+
+            " arrays : " + min;
+
+        }
+
+        document.getElementById('run').addEventListener('click', task8);
+
+    </script>
+
+                    </xmp>
+                    <a href="#homeArray"><p><b>Вернутись назад</b></p></a>
+                </div>
+                <div style="margin-top: 50px;" id="juliaArrays">
+                    <p><b>Зовнішній вигляд та результат роботи програми варіанту 2(Юля):</b></p>
+                    <img width="500px" height="130px" src="images/view_2_task.png" alt="">
+                    <p><b>Результат роботи</b></p>
+                    <img width="500px" height="270px" src="images/result_2_task.png" alt="">
+                    <p style="margin-top: 50px;"><b>HTML-код:</b></p>
+                    <xmp style="background-color: aqua;">
+
+
+    <b>Введіть кількіcть елементів в масиві:</b> <input id="array">
+    <button id="ok">OK</button>
+    
+    <hr>
+    <div class="rez" id="start"></div>
+    <br>
+    <div class="rez" id="summ"></div>
+    <br>
+    <div class="rez" id="dobut"></div>
+    <br>
+    <div class="rez" id="max"></div>
+    <br>
+    <div class="rez" id="min"></div>
+    
+    
+    <script>
+        function calculate() {
+        var number_el = document.getElementById('array').value;
+        var main_array = [];
+    
+        for (var i = 0; i < number_el; i++) {
+            main_array[i] = Math.round((Math.random() * 30) - 15)
+    
+        }
+    
+        var sum = 0;
+        var length = parseInt(main_array.length / 2);
+        for (var i = 0; i < length; i++) {
+            sum += main_array[2 * i + 1];
+        }
+    
+        var dobutok = 1;
+        for (var i = 0; i <= main_array.length; i++) {
+            if (main_array[i] < 0) {
+            dobutok *= main_array[i];
+            }
+        }
+        if (dobutok == 1) {
+            dobutok = 0;
+        }
+    
+    
+        var max = main_array[0];
+        var max_index = 0;
+        for (var i = 0; i < main_array.length; ++i) {
+            if (main_array[i] >= 0) {
+            if (main_array[i] > max) {
+                max = main_array[i];
+                max_index = i + 1;
+            }
+            }
+        }
+        if (max < 0) {
+            max = 'None'
+            max_index = "-"
+        }
+        vid_max = "Найбільший елемент " + max + " з індексом " + max_index;
+    
+        var min = main_array[0];
+        var min_index = 1;
+        for (var i = 1; i < main_array.length; i++) {
+            if (i % 2 == 0) {
+            if (main_array[i] < min) {
+                min = main_array[i];
+                min_index = i + 1;
+            }
+            }
+        }
+        vid_min = "Найменший елемент серед неапрних індексів " + min + " з індексом " + min_index;
+    
+        document.getElementById('start').innerHTML = main_array;
+        document.getElementById('summ').innerHTML = "Сума елементів з парними індексами " + sum;
+        document.getElementById('dobut').innerHTML = "Добуток від’ємних елементів " + dobutok;
+        document.getElementById('max').innerHTML = vid_max;
+        document.getElementById('min').innerHTML = vid_min;
+        }
+        document.getElementById('ok').addEventListener('click', calculate);
+    </script>
+
+                    </xmp>
+                    <a href="#homeArray"><p><b>Вернутись назад</b></p></a>
+                </div>
+                <div id="vovaArrays">
+                    <p><b>Зовнішній вигляд та результат роботи програми варіанту 3(Вова):</b></p>
+                    <img width="600px" height="130px" src="images/view_3_task.png" alt="" srcset="">
+                    <p><b>Результат роботи</b></p>
+                    <img width="620px" height="180px" src="images/result_3_task.png" alt="">
+                    <p style="margin-top: 50px;"><b>HTML-код:</b></p>
+                    <xmp style="background-color: aqua;">
+
+
+        <div class="container">
+            <button style="margin-top: 30px;" class="btn btn-info" onclick="func()">
+                Start program</button>
+
+            <div style="margin-top: 50px;">
+                <p style="display: none;" id="array_a"><b>Заданий масив: </b></p>
+                <p id="max"></p>
+                <p  style="display: none;" id="array_b"><b>Вихідний масив: </b></p>
+            </div>
+            
+        </div>
+        
+
+        <script>
+            function func() {
+                var length = prompt("Enter array length : ");
+
+                var array_a = [];
+
+                for (i = 0; i < length; i++) {
+                    array_a.push(Math.round(Math.random() * 100));
+                }
+
+                var max = 0;
+
+                for (i = 0; i < array_a.length; i++) {
+                    if (array_a[i] > max) {
+                        max = array_a[i];
+                    }
+                }
+
+                function printArray(array, blockName) {
+                    document.getElementById(blockName).style.display = "block"
+                    var log = [];
+
+                    for (i = 0; i < array.length; i++) {
+                        if (i < array.length - 1) {
+                            log += array[i] + ', ';
+                        } else { log += array[i] }
+
+                    }
+                    document.getElementById(blockName).innerHTML += log;
+                }
+
+                printArray(array_a, 'array_a');
+
+                document.getElementById('max').innerHTML += "<b>Max element : </b>" + max;   
+
+                var array_b = [];
+
+                for (i = 0; i < length; i++) {
+                    array_b.push(array_a[i] * max);
+                }
+
+                printArray(array_b, 'array_b');
+            }
+
+            
+        </script>
+                    </xmp>
+                    <a href="#homeArray"><p><b>Вернутись назад</b></p></a>
+                </div>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="sixItem">
+                <div id="homeTask6"></div>
+                <a href="#katerTask6">
+                    <p><b>Завдання Каті(8 варіант)</b></p>
+                </a>
+                <a href="#juliaTask6">
+                    <p><b>Завдання Юлі(2 варіант)</b></p>
+                </a>
+                <a href="#vovaTask6">
+                    <p><b>Завдання Вови(3 варіант)</b></p>
+                </a>
+                <div style="margin-top: 50px;" id="katerTask6">
+                    <p><b>Зовнішній вигляд варіанту 8(Катюха):</b></p>
+                    <img  src="images/alarm_view.png" alt="" srcset="">
+                    <p style="margin-top: 50px;"><b>HTML-код:</b></p>
+                    <xmp style="background-color: aqua;">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="nowTime" class="form-label">Now Time</label>
+                    <input type="text" class="form-control" id="nowTime">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Time</label>
+                    <input step="2" type="time" class="form-control" id="time">
+                </div>
+                <button type="button" onclick="func()" class="btn btn-primary">Add alarm</button>
+            </div>
+            <div class="col-4" id="alarms">
+                <p><b>Заведені будильники: </b></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        var alarm;
+        var timeEnd;
+        function func() {
+            var date = document.getElementById("date").value;
+            timeEnd = document.getElementById('time').value;
+            let time = Math.abs(new Date() - new Date(date + " " + timeEnd))
+            
+            alarm = setTimeout(function(){ 
+                alert("Вставай, на роботу пора!"); 
+                document.getElementById(timeEnd).innerHTML = ""
+            }, time);
+
+            document.getElementById('alarms').innerHTML += '<p id="'+timeEnd+
+            '"><b>Alarm: </b> Date: '+date+' Time: <mark>'+ timeEnd 
+                +'</mark><button onclick="disable()">Disable</button></p>'
+
+        }
+
+        function disable(){
+            clearTimeout(alarm);
+            document.getElementById(timeEnd).innerHTML = ""
+        }
+
+
+        function showtime() {
+            var now = new Date()
+            var hours = now.getHours()
+            var minutes = now.getMinutes()
+            var seconds = now.getSeconds()
+            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+            timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+            timeValue += (hours >= 12) ? " PM" : " AM"
+            document.getElementById('nowTime').value = timeValue
+            timerID = setTimeout("showtime()", 1000)
+            timerRunning = true
+            
+        }
+    </script>
+
+                    </xmp>
+                    <a href="#homeTask6"><p><b>Вернутись назад</b></p></a>
+                </div>
+                <div style="margin-top: 50px;" id="juliaTask6">
+                    <p><b>Зовнішній вигляд програми варіанту 2(Юля):</b></p>
+                    <img src="images/menu_view.png" alt="">
+                    <p style="margin-top: 50px;"><b>HTML-код:</b></p>
+                    <xmp style="background-color: aqua;">
+
+                        <!-- script.js -->
+   
+            function func() {
+
+                let array = ['Item3'];
+                var inner = array.map(el => '<li  class = "more">' + el + '<ul  id="' + 
+                    el + '"></ul></li>').join('');
+                document.getElementById('menu').innerHTML += inner;
+
+                let arrayOfPages = ['Page1', 'Page2'];
+                var inner = arrayOfPages.map(el => '<li><a href="' + el + '.html">' + 
+                    el + '</a></li>').join('');
+                array.map(el => document.getElementById(el).innerHTML += inner);
+                (function () {
+                    var elm = document.querySelectorAll('.more');
+
+                    for (var i = 0; i < elm.length; i++) {
+                        elm[i].addEventListener('click', function () {
+                            this.classList.toggle('open');
+                        }, false);
+                    }
+                })();
+
+
+                <!-- Main page -->
+                <ul class="nav" id="menu">
+                    <li><a href="Item1.html">Item1</a></li>
+                    <li>Item2</li>
+                </ul>
+
+                <!-- page 1 -->
+                <ul class="nav" id="menu">
+                    <li><a href="Item1.html">Item1</a></li>
+                    <li>Item2</li>
+                </ul><b>Page 1</b>
+
+                <!-- page 2 -->
+                <ul class="nav" id="menu">
+                    <li><a href="Item1.html">Item1</a></li>
+                    <li>Item2</li>
+                </ul><b>Hello!!!</b>
+
+                <!-- item 1 -->
+                <ul class="nav" id="menu">
+                    <li><a href="Item1.html"></a>Item1</li>
+                    <li>Item2</li>
+                </ul><b>Page for Item1</b>
+                        
+
+                    </xmp>
+                    <a href="#homeTask6"><p><b>Вернутись назад</b></p></a>
+                </div>
+
+                <div style="margin-top: 50px;" id="vovaTask6">
+                    <p><b>Зовнішній вигляд програми варіанту 3(Вова):</b></p>
+                    <img src="images/calculator_view.png" alt="">
+                    <p style="margin-top: 50px;"><b>HTML-код:</b></p>
+                    <xmp style="background-color: aqua;">
+
+    <div style="margin-top: 100px;" class="container">  
+        <h3>Такий крутий калькулятор шо мови нема</h3>
+        
+        <div class="row">
+            <div>
+            <input id='expr' class='form-control'/>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button onclick="func1()" class='btn btn-info'>1</button>
+                <button onclick="func2()" class='btn btn-info'>2</button>
+                <button onclick="func3()" class='btn btn-info'>3</button>
+                <button onclick="funcClear()" class='btn btn-danger'>C</button>
+                <button onclick="funcPlus()" class='btn btn-danger'>+</button>
+                <button onclick="funcMinus()" class='btn btn-danger'>-</button>
+            </div>
+            <div>
+                <button onclick="func4()" class='btn btn-info'>4</button>
+                <button onclick="func5()" class='btn btn-info'>5</button>
+                <button onclick="func6()" class='btn btn-info'>6</button>
+                <button onclick="funcMult()" class='btn btn-danger'>*</button>
+                <button onclick="funcDiv()" class='btn btn-danger'>/</button>
+                <button onclick="funcDeg()" class='btn btn-danger'>^</button>
+            </div>
+            <div>
+                <button onclick="func7()" class='btn btn-info'>7</button>
+                <button onclick="func8()" class='btn btn-info'>8</button>
+                <button onclick="func9()" class='btn btn-info'>9</button>
+                <button onclick="funcOst()" class='btn btn-danger'>%</button>
+                <button onclick="funcSqrt()" class='btn btn-danger'>√</button>  
+            </div>
+            <div>
+                <button onclick="func0()" class='btn btn-info'>0</button>
+                <button onclick="funcDot()" class='btn btn-warning'>.</button>
+                <button onclick="funcDel()" class='btn btn-warning'><</button>
+                <button style="margin-left: 105px;" onclick="funcCalc()" 
+                class='btn btn-success'>=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function func1(){document.getElementById('expr').value += '1';}
+        function func2(){document.getElementById('expr').value += '2';}
+        function func3(){document.getElementById('expr').value += '3';}
+        function func4(){document.getElementById('expr').value += '4';}
+        function func5(){document.getElementById('expr').value += '5';}
+        function func6(){document.getElementById('expr').value += '6';}
+        function func7(){document.getElementById('expr').value += '7';}
+        function func8(){document.getElementById('expr').value += '8';}
+        function func9(){document.getElementById('expr').value += '9';}
+        function func0(){document.getElementById('expr').value += '0';}
+        function funcDot(){document.getElementById('expr').value +=  '.';}
+        function funcDel(){document.getElementById('expr').value =
+         document.getElementById('expr').value.slice(0,-1);}
+        function funcClear(){document.getElementById('expr').value = '';}
+        function funcPlus(){document.getElementById('expr').value += '+';}
+        function funcMinus(){document.getElementById('expr').value += '-';}
+        function funcDiv(){document.getElementById('expr').value += '/';}
+        function funcMult(){document.getElementById('expr').value += '*';}
+        function funcOst(){document.getElementById('expr').value += '%';}
+        function funcDeg(){document.getElementById('expr').value += '**';}
+        function funcSqrt(){document.getElementById('expr').value = 'Math.sqrt('
+        +document.getElementById('expr').value+')'}
+        function funcCalc(){document.getElementById('expr').value =
+         eval(document.getElementById('expr').value);}  
+    </script>
+
+                    </xmp>
+                    <a href="#homeTask6"><p><b>Вернутись назад</b></p></a>
+                </div>
+            </div>
+            <div class="col-8 labItemContent" style="display: none;" id="conclusion4">
+                <p><b>Висновок: </b> ми придбали практичні навички роботи маніпулювання інформаційним 
+                    вмістом Web-документа засобами мови Javasсript, використання об’єктів, масивів,
+                     функцій, подій, обробників подій у сценаріях на мові JavaScript</p>
+
+                    <p>А також застосували  4 способи функціонального застосування JavaScript:</p>
+                    <ul>
+                        <li>гіпертекстове посилання (схема URL);</li>
+                        <li>обробник події (handler);</li>
+                        <li>підстановка (entity);</li>
+                        <li>вставка (тег SCRIPT).</li>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
